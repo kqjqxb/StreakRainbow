@@ -58,6 +58,19 @@ const HomeScreen = () => {
         justifyContent: 'center',
         width: dimensions.width,
       }}>
+        <TouchableOpacity style={{
+          position: 'absolute',
+          width: dimensions.width,
+          height: dimensions.height,
+          zIndex: 10000,
+
+        }}
+          onPress={() => {
+            nextAction();
+          } }
+        >
+
+        </TouchableOpacity>
         {isHabitVisible ? (
           <TouchableOpacity
             onPress={() => {
