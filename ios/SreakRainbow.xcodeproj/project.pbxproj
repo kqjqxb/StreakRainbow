@@ -8,23 +8,47 @@
 
 /* Begin PBXBuildFile section */
 		0C80B921A6F3F58F76C31292 /* libPods-SreakRainbow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-SreakRainbow.a */; };
+		0E98BE3E00B249E586F8D64E /* SFProText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75810ADCBD9443C291E81F18 /* SFProText-Bold.ttf */; };
+		134E6903F0AB47F08F137598 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 057209957B654B37A2640106 /* SF-Pro-Display-Bold.otf */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		1D414A94DD5D4BEC927BF0B7 /* SFProText-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4482C432946C45EF8857AD36 /* SFProText-Light.ttf */; };
+		43E5B628517E4D9695BE3B24 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D75B702C28CA41A288301620 /* SF-Pro-Display-Regular.otf */; };
+		4F738EB0ED8243F6B064E0EE /* SFProText-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 53AA4636E9A24B6BBBE9FD4A /* SFProText-LightItalic.ttf */; };
+		502FF1CB4E86495FB80CC348 /* SFProText-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79329A3576784CA081F2ADBE /* SFProText-Heavy.ttf */; };
+		518F4D3D5B134D9A888A2969 /* SFProText-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C9A9A3A57D446E3B1962274 /* SFProText-BoldItalic.ttf */; };
+		5A8628A3304C49BDA13AA56E /* SF-Pro-Display-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 53B9713F809A4B91B75C50EE /* SF-Pro-Display-Black.otf */; };
+		61BE3BB22A0B41FAA75455B1 /* SF-Pro-Display-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D73CE396B814751A206C7D4 /* SF-Pro-Display-Heavy.otf */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8E371A72190940F1B94F2AEB /* SFProText-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7CA11EB48804CA2A6AE12B1 /* SFProText-Semibold.ttf */; };
+		B44CAEE022374241A4F7F7CE /* SFProText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64C119EFE6AC4C1C8637A465 /* SFProText-Regular.ttf */; };
+		CEFEE2DD1B3E4070BDF2F6C8 /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8B63BA3544594402916C97E7 /* SF-Pro-Display-Semibold.otf */; };
 		D7F0C3316AA5ECE4C0D7EA2B /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		057209957B654B37A2640106 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Display-Bold.otf"; path = "../src/assets/fonts/SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
+		0D73CE396B814751A206C7D4 /* SF-Pro-Display-Heavy.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Display-Heavy.otf"; path = "../src/assets/fonts/SF-Pro-Display-Heavy.otf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* SreakRainbow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SreakRainbow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SreakRainbow/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SreakRainbow/Info.plist; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = SreakRainbow/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		2C9A9A3A57D446E3B1962274 /* SFProText-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-BoldItalic.ttf"; path = "../src/assets/fonts/SFProText-BoldItalic.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-SreakRainbow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SreakRainbow.debug.xcconfig"; path = "Target Support Files/Pods-SreakRainbow/Pods-SreakRainbow.debug.xcconfig"; sourceTree = "<group>"; };
+		4482C432946C45EF8857AD36 /* SFProText-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-Light.ttf"; path = "../src/assets/fonts/SFProText-Light.ttf"; sourceTree = "<group>"; };
+		53AA4636E9A24B6BBBE9FD4A /* SFProText-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-LightItalic.ttf"; path = "../src/assets/fonts/SFProText-LightItalic.ttf"; sourceTree = "<group>"; };
+		53B9713F809A4B91B75C50EE /* SF-Pro-Display-Black.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Display-Black.otf"; path = "../src/assets/fonts/SF-Pro-Display-Black.otf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-SreakRainbow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SreakRainbow.release.xcconfig"; path = "Target Support Files/Pods-SreakRainbow/Pods-SreakRainbow.release.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-SreakRainbow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SreakRainbow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64C119EFE6AC4C1C8637A465 /* SFProText-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-Regular.ttf"; path = "../src/assets/fonts/SFProText-Regular.ttf"; sourceTree = "<group>"; };
+		75810ADCBD9443C291E81F18 /* SFProText-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-Bold.ttf"; path = "../src/assets/fonts/SFProText-Bold.ttf"; sourceTree = "<group>"; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = SreakRainbow/AppDelegate.swift; sourceTree = "<group>"; };
+		79329A3576784CA081F2ADBE /* SFProText-Heavy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-Heavy.ttf"; path = "../src/assets/fonts/SFProText-Heavy.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = SreakRainbow/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8B63BA3544594402916C97E7 /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Display-Semibold.otf"; path = "../src/assets/fonts/SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
+		D75B702C28CA41A288301620 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Display-Regular.otf"; path = "../src/assets/fonts/SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F7CA11EB48804CA2A6AE12B1 /* SFProText-Semibold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-Semibold.ttf"; path = "../src/assets/fonts/SFProText-Semibold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +75,25 @@
 			name = SreakRainbow;
 			sourceTree = "<group>";
 		};
+		262B1DDA463D4A5AB8867887 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				53B9713F809A4B91B75C50EE /* SF-Pro-Display-Black.otf */,
+				057209957B654B37A2640106 /* SF-Pro-Display-Bold.otf */,
+				0D73CE396B814751A206C7D4 /* SF-Pro-Display-Heavy.otf */,
+				D75B702C28CA41A288301620 /* SF-Pro-Display-Regular.otf */,
+				8B63BA3544594402916C97E7 /* SF-Pro-Display-Semibold.otf */,
+				75810ADCBD9443C291E81F18 /* SFProText-Bold.ttf */,
+				2C9A9A3A57D446E3B1962274 /* SFProText-BoldItalic.ttf */,
+				79329A3576784CA081F2ADBE /* SFProText-Heavy.ttf */,
+				4482C432946C45EF8857AD36 /* SFProText-Light.ttf */,
+				53AA4636E9A24B6BBBE9FD4A /* SFProText-LightItalic.ttf */,
+				64C119EFE6AC4C1C8637A465 /* SFProText-Regular.ttf */,
+				F7CA11EB48804CA2A6AE12B1 /* SFProText-Semibold.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +118,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				262B1DDA463D4A5AB8867887 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -161,6 +205,18 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				D7F0C3316AA5ECE4C0D7EA2B /* PrivacyInfo.xcprivacy in Resources */,
+				5A8628A3304C49BDA13AA56E /* SF-Pro-Display-Black.otf in Resources */,
+				134E6903F0AB47F08F137598 /* SF-Pro-Display-Bold.otf in Resources */,
+				61BE3BB22A0B41FAA75455B1 /* SF-Pro-Display-Heavy.otf in Resources */,
+				43E5B628517E4D9695BE3B24 /* SF-Pro-Display-Regular.otf in Resources */,
+				CEFEE2DD1B3E4070BDF2F6C8 /* SF-Pro-Display-Semibold.otf in Resources */,
+				0E98BE3E00B249E586F8D64E /* SFProText-Bold.ttf in Resources */,
+				518F4D3D5B134D9A888A2969 /* SFProText-BoldItalic.ttf in Resources */,
+				502FF1CB4E86495FB80CC348 /* SFProText-Heavy.ttf in Resources */,
+				1D414A94DD5D4BEC927BF0B7 /* SFProText-Light.ttf in Resources */,
+				4F738EB0ED8243F6B064E0EE /* SFProText-LightItalic.ttf in Resources */,
+				B44CAEE022374241A4F7F7CE /* SFProText-Regular.ttf in Resources */,
+				8E371A72190940F1B94F2AEB /* SFProText-Semibold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +316,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = SreakRainbow/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
@@ -273,7 +330,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rainbow.streak.quest.app;
 				PRODUCT_NAME = SreakRainbow;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -288,6 +345,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SreakRainbow/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -300,7 +358,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rainbow.streak.quest.app;
 				PRODUCT_NAME = SreakRainbow;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -376,10 +434,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
@@ -448,10 +503,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
