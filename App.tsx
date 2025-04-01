@@ -1,8 +1,8 @@
 import React from 'react';
-import RainbowStreakQuestStack from './StackNavigator';
+import StreakQuestStack from './StackNavigator';
 
 function App() {
-  return <RainbowStreakQuestStack />;
+  return <StreakQuestStack />;
 }
 
 export default App;

@@ -1,26 +1,24 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useState } from 'react';
 import {
   Text,
   Dimensions,
   Image,
-  Modal,
   SafeAreaView,
   TouchableOpacity,
   View
 } from 'react-native';
-import { ChevronLeftIcon } from 'react-native-heroicons/solid';
-import LoadingRainbowStreakScreen from './LoadingRainbowStreakScreen';
+import { CalendarIcon, ChevronLeftIcon, Cog6ToothIcon, ListBulletIcon } from 'react-native-heroicons/solid';
 // import RainbowLepreGameScreen from './RainbowLepreGameScreen';
 
 const homeRainbowScreensButtons = [
   {
     rainbowScreen: 'Home',
-    rainbowWhiteIcon: require('../assets/icons/rainbowButtons/trackingIcon.png'),
+    rainbowWhiteIcon: <ListBulletIcon size={Dimensions.get('window').height * 0.033} color='white' />,
     rainbowScreenTitle: 'Tracking',
   },
   {
     rainbowScreen: 'Calendar',
-    rainbowWhiteIcon: require('../assets/icons/rainbowButtons/calendarIcon.png'),
+    rainbowWhiteIcon: <CalendarIcon size={Dimensions.get('window').height * 0.033} color='white' />,
     rainbowScreenTitle: 'Calendar',
   },
   // {
@@ -30,47 +28,49 @@ const homeRainbowScreensButtons = [
   // },
   {
     rainbowScreen: 'Settings',
-    rainbowWhiteIcon: require('../assets/icons/rainbowButtons/settingsIcon.png'),
+    rainbowWhiteIcon: <Cog6ToothIcon size={Dimensions.get('window').height * 0.033} color='white' />,
     rainbowScreenTitle: 'Settings',
   },
 ];
 
-const fontDMSansRegular = 'DMSans-Regular';
+const fontSfProTextRegular = 'SFProText-Regular';
 
 const HomeScreen = () => {
 
   const [dimensions, setDimensions] = useState(Dimensions.get('window'));
-  const [selectedRainbowScreen, setSelectedRainbowScreen] = useState('LoadingRainbow');
+  const [selectedRainbowScreen, setSelectedRainbowScreen] = useState('Home');
   const [isHabitVisible, setIsHabitVisible] = useState(false);
 
   return (
     <View style={{
       width: dimensions.width,
       alignItems: 'center',
-      backgroundColor: '#268A42',
+      backgroundColor: 'rgb(15, 135, 49)',
       flex: 1,
     }}>
+      <TouchableOpacity style={{
+        position: 'absolute',
+        width: dimensions.width,
+        height: dimensions.height,
+        zIndex: 10000,
+
+      }}
+        onPress={() => {
+          nextAction();
+        }}
+      >
+
+      </TouchableOpacity>
+
       <SafeAreaView style={{
         alignSelf: 'center',
-        backgroundColor: '#1AAC4B',
+        backgroundColor: 'rgba(253, 184, 56, 0.73)',
         alignItems: 'center',
         marginBottom: dimensions.height * 0.01,
         justifyContent: 'center',
         width: dimensions.width,
       }}>
-        <TouchableOpacity style={{
-          position: 'absolute',
-          width: dimensions.width,
-          height: dimensions.height,
-          zIndex: 10000,
 
-        }}
-          onPress={() => {
-            nextAction();
-          } }
-        >
-
-        </TouchableOpacity>
         {isHabitVisible ? (
           <TouchableOpacity
             onPress={() => {
@@ -92,7 +92,7 @@ const HomeScreen = () => {
               textAlign: 'center',
               alignSelf: 'flex-start',
               color: 'white',
-              fontFamily: fontDMSansRegular,
+              fontFamily: fontSfProTextRegular,
             }}
             >
               Info
@@ -103,7 +103,7 @@ const HomeScreen = () => {
             paddingBottom: dimensions.height * 0.014,
             alignSelf: 'flex-start',
             textAlign: 'center',
-            fontFamily: fontDMSansRegular,
+            fontFamily: fontSfProTextRegular,
             fontWeight: 700,
             alignItems: 'center',
             fontSize: dimensions.width * 0.061,
@@ -120,21 +120,74 @@ const HomeScreen = () => {
           height: dimensions.height,
           width: dimensions.width,
         }}>
-
-
-          <Text style={{
-            alignItems: 'center',
-            fontWeight: 700,
-            fontSize: dimensions.width * 0.1,
-            textAlign: 'center',
+          <View style={{
+            justifyContent: 'flex-end',
+            height: dimensions.height * 0.77,
             alignSelf: 'center',
-            color: 'white',
-            fontFamily: fontDMSansRegular,
-            marginTop: dimensions.height * 0.25,
+            width: dimensions.width,
+          }}>
+            <View style={{
+              bottom: dimensions.height * 0,
+              position: 'absolute',
+              alignSelf: 'center',
+              width: dimensions.width * 0.9,
+            }}>
+              <Text
+                style={{
+                  bottom: -dimensions.height * 0.07,
+                  fontSize: dimensions.width * 0.046,
+                  fontWeight: 600,
+                  textAlign: 'center',
+                  color: 'white',
+                  paddingHorizontal: dimensions.width * 0.08,
+                  fontFamily: fontSfProTextRegular,
+                }}
+              >
+                There are no habits here yet, it's time to create one!
+              </Text>
+
+              <Image
+                source={require('../assets/images/homePersImage.png')}
+                style={{
+                  marginTop: dimensions.height * 0.05,
+                  height: dimensions.height * 0.4,
+                  alignSelf: 'flex-start',
+                  width: dimensions.width * 0.4,
+                }}
+                resizeMode='contain'
+              />
+            </View>
+          </View>
+
+          <TouchableOpacity style={{
+            position: 'absolute',
+            top: dimensions.height * 0.01,
+            alignSelf: 'center',
+            width: dimensions.width * 0.9,
+            height: dimensions.height * 0.07,
+            backgroundColor: 'rgba(253, 185, 56, 1)',
+            borderRadius: dimensions.width * 0.07,
+            justifyContent: 'center',
+            alignItems: 'center',
           }}
+            onPress={() => {
+              setIsHabitVisible(true);
+              // nextAction();
+            }}
           >
-            Hello, User!
-          </Text>
+            <Text
+              style={{
+                fontSize: dimensions.width * 0.046,
+                fontWeight: 600,
+                textAlign: 'center',
+                color: 'black',
+                paddingHorizontal: dimensions.width * 0.1,
+                fontFamily: fontSfProTextRegular,
+              }}
+            >
+              Create a new habit
+            </Text>
+          </TouchableOpacity>
         </View>
       ) : selectedRainbowScreen === 'LoadingRainbow' ? (
         <LoadingRainbowStreakScreen setSelectedRainbowScreen={setSelectedRainbowScreen} selectedRainbowScreen={selectedRainbowScreen} />
@@ -146,7 +199,7 @@ const HomeScreen = () => {
             bottom: dimensions.height * 0,
             height: dimensions.height * 0.12,
             alignSelf: 'center',
-            backgroundColor: '#1AAC4B',
+            backgroundColor: 'rgba(253, 184, 56, 0.73)',
             flexDirection: 'row',
             width: dimensions.width,
             position: 'absolute',
@@ -172,20 +225,12 @@ const HomeScreen = () => {
                 backgroundColor: selectedRainbowScreen === rainbBtn.rainbowScreen ? '#268A42' : 'transparent',
               }}
             >
-              <Image
-                source={rainbBtn.rainbowWhiteIcon}
-                style={{
-                  width: dimensions.height * 0.028,
-                  height: dimensions.height * 0.028,
-                  textAlign: 'center'
-                }}
-                resizeMode="contain"
-              />
+              {rainbBtn.rainbowWhiteIcon}
               <Text
                 style={{
                   marginTop: dimensions.height * 0.008,
                   fontSize: dimensions.width * 0.034,
-                  fontFamily: fontDMSansRegular,
+                  fontFamily: fontSfProTextRegular,
                   color: 'white',
                   fontWeight: 600,
                 }}

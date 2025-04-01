@@ -7,17 +7,17 @@ export const UserProvider = ({ children }) => {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    const loadRainbowUser = async () => {
+    const loadStreakUser = async () => {
       try {
-        const storedRainbowUser = await AsyncStorage.getItem('currentUser');
-        if (storedRainbowUser) {
-          setUser(JSON.parse(storedRainbowUser));
+        const storedStreakUser = await AsyncStorage.getItem('currentUser');
+        if (storedStreakUser) {
+          setUser(JSON.parse(storedStreakUser));
         }
       } catch (error) {
-        console.error('Error loading storedRainbowUser data:', error);
+        console.error('Error loading storedStreakUser data:', error);
       }
     };
-    loadRainbowUser();
+    loadStreakUser();
   }, []);
 
   return (

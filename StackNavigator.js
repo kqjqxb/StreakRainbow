@@ -14,7 +14,7 @@ import { loadUserData } from './src/redux/userSlice';
 
 const Stack = createNativeStackNavigator();
 
-const RainbowStreakQuestStack = () => {
+const StreakQuestStack = () => {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <Provider store={store}>
@@ -32,7 +32,7 @@ const AppNavigator = () => {
   const dispatch = useDispatch();
   const { user, setUser } = useContext(UserContext);
 
-  const [initializingRainbowStreakApp, setInitializingRainbowStreakApp] = useState(true);
+  const [initializingStreakApp, setInitializingStreakApp] = useState(true);
 
   useEffect(() => {
     dispatch(loadUserData());
@@ -41,29 +41,29 @@ const AppNavigator = () => {
   useEffect(() => {
     const loadRainbowStreakUser = async () => {
       try {
-        const rainbowStreakDeviceId = await DeviceInfo.getUniqueId();
-        const storageKey = `currentUser_${rainbowStreakDeviceId}`;
-        const storedRainbowStreakUser = await AsyncStorage.getItem(storageKey);
+        const streakDeviceId = await DeviceInfo.getUniqueId();
+        const storageKey = `currentUser_${streakDeviceId}`;
+        const storedStreakUser = await AsyncStorage.getItem(storageKey);
 
-        if (storedRainbowStreakUser) {
-          setUser(JSON.parse(storedRainbowStreakUser));
+        if (storedStreakUser) {
+          setUser(JSON.parse(storedStreakUser));
         } 
       } catch (error) {
         console.error('Error loading of rainbowStreakUser user', error);
       } finally {
-        setInitializingRainbowStreakApp(false);
+        setInitializingStreakApp(false);
       }
     };
     loadRainbowStreakUser();
   }, [setUser]);
 
-  if (initializingRainbowStreakApp) {
+  if (initializingStreakApp) {
     return (
       <View style={{
+        alignItems: 'center',
+        flex: 1,
         justifyContent: 'center',
         backgroundColor: '#268A42',
-        flex: 1,
-        alignItems: 'center',
       }}>
         <ActivityIndicator size="large" color="#FDB938" />
       </View>
@@ -79,4 +79,4 @@ const AppNavigator = () => {
   );
 };
 
-export default RainbowStreakQuestStack;
+export default StreakQuestStack;
