@@ -228,7 +228,7 @@ const HomeScreen = () => {
               {rainbBtn.rainbowWhiteIcon}
               <Text
                 style={{
-                  marginTop: dimensions.height * 0.008,
+                  marginTop: dimensions.height * 0.004,
                   fontSize: dimensions.width * 0.034,
                   fontFamily: fontSfProTextRegular,
                   color: 'white',
