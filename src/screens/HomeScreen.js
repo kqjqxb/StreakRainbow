@@ -8,6 +8,8 @@ import {
   View
 } from 'react-native';
 import { CalendarIcon, ChevronLeftIcon, Cog6ToothIcon, ListBulletIcon } from 'react-native-heroicons/solid';
+import RainbowCalendarScreen from './RainbowCalendarScreen';
+import SettingsScreen from './SettingsScreen';
 // import RainbowLepreGameScreen from './RainbowLepreGameScreen';
 
 const homeRainbowScreensButtons = [
@@ -191,6 +193,11 @@ const HomeScreen = () => {
         </View>
       ) : selectedRainbowScreen === 'LoadingRainbow' ? (
         <LoadingRainbowStreakScreen setSelectedRainbowScreen={setSelectedRainbowScreen} selectedRainbowScreen={selectedRainbowScreen} />
+      ) : selectedRainbowScreen === 'Calendar' ? (
+        <RainbowCalendarScreen setSelectedRainbowScreen={setSelectedRainbowScreen} selectedRainbowScreen={selectedRainbowScreen} />
+      ) : selectedRainbowScreen === 'Settings' ? (
+        <SettingsScreen setSelectedRainbowScreen={setSelectedRainbowScreen} 
+        />
       ) : null}
 
       {selectedRainbowScreen !== 'LoadingRainbow' && (
@@ -199,7 +206,7 @@ const HomeScreen = () => {
             bottom: dimensions.height * 0,
             height: dimensions.height * 0.12,
             alignSelf: 'center',
-            backgroundColor: 'rgba(253, 184, 56, 0.73)',
+            backgroundColor: '#b6aa36',
             flexDirection: 'row',
             width: dimensions.width,
             position: 'absolute',
@@ -222,7 +229,15 @@ const HomeScreen = () => {
                 marginHorizontal: dimensions.width * 0.001,
                 borderRadius: dimensions.width * 0.07,
                 padding: dimensions.height * 0.019,
-                backgroundColor: selectedRainbowScreen === rainbBtn.rainbowScreen ? '#268A42' : 'transparent',
+                backgroundColor: selectedRainbowScreen === rainbBtn.rainbowScreen ? 'rgba(253, 185, 56, 1)' : 'transparent',
+                shadowColor: 'black',
+                shadowOffset: {
+                  width: 0,
+                  height: 1,
+                },
+                shadowOpacity: 0.18,
+                shadowRadius: dimensions.width * 0.03,
+                elevation: 1,
               }}
             >
               {rainbBtn.rainbowWhiteIcon}
