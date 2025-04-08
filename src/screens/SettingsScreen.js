@@ -3,9 +3,7 @@ import {
     View,
     Text,
     TouchableOpacity,
-    Image,
     Dimensions,
-    SafeAreaView,
     Linking,
     Switch,
 } from 'react-native';

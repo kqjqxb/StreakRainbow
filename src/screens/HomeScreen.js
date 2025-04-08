@@ -55,13 +55,11 @@ const HomeScreen = () => {
         width: dimensions.width,
         height: dimensions.height,
         zIndex: 10000,
-
       }}
         onPress={() => {
           nextAction();
         }}
       >
-
       </TouchableOpacity>
 
       <SafeAreaView style={{
@@ -204,17 +202,29 @@ const HomeScreen = () => {
         <View
           style={{
             bottom: dimensions.height * 0,
+            
             height: dimensions.height * 0.12,
+            
             alignSelf: 'center',
+            
             backgroundColor: '#b6aa36',
+            
             flexDirection: 'row',
+            
             width: dimensions.width,
+            
             position: 'absolute',
+            
             alignItems: 'center',
+            
             paddingTop: dimensions.height * 0.015,
+            
             justifyContent: 'space-between',
+            
             zIndex: 4000,
+            
             paddingHorizontal: dimensions.width * 0.05,
+            
             paddingBottom: dimensions.height * 0.024,
           }}
         >
@@ -223,31 +233,42 @@ const HomeScreen = () => {
               key={index}
               onPress={() => setSelectedRainbowScreen(rainbBtn.rainbowScreen)}
               style={{
-                width: dimensions.width * 0.24,
-                alignItems: 'center',
-                height: dimensions.height * 0.088,
-                marginHorizontal: dimensions.width * 0.001,
-                borderRadius: dimensions.width * 0.07,
-                padding: dimensions.height * 0.019,
-                backgroundColor: selectedRainbowScreen === rainbBtn.rainbowScreen ? 'rgba(253, 185, 56, 1)' : 'transparent',
                 shadowColor: 'black',
+                
+                alignItems: 'center',
+                
+                height: dimensions.height * 0.088,
+                
+                marginHorizontal: dimensions.width * 0.001,
+                
+                backgroundColor: selectedRainbowScreen === rainbBtn.rainbowScreen ? 'rgba(253, 185, 56, 1)' : 'transparent',
+                
+                borderRadius: dimensions.width * 0.07,
+                
+                padding: dimensions.height * 0.019,
+                
+                width: dimensions.width * 0.24,
+                
                 shadowOffset: {
                   width: 0,
                   height: 1,
                 },
-                shadowOpacity: 0.18,
-                shadowRadius: dimensions.width * 0.03,
+                
                 elevation: 1,
+                
+                shadowOpacity: 0.18,
+                
+                shadowRadius: dimensions.width * 0.03,
               }}
             >
               {rainbBtn.rainbowWhiteIcon}
               <Text
                 style={{
-                  marginTop: dimensions.height * 0.004,
-                  fontSize: dimensions.width * 0.034,
-                  fontFamily: fontSfProTextRegular,
-                  color: 'white',
                   fontWeight: 600,
+                  fontFamily: fontSfProTextRegular,
+                  marginTop: dimensions.height * 0.004,
+                  color: 'white',
+                  fontSize: dimensions.width * 0.034,
                 }}
               >
                 {rainbBtn.rainbowScreenTitle}

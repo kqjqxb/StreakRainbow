@@ -429,12 +429,12 @@ const RainbowCalendarScreen = ({ selectedRainbowScreen, setSelectedRainbowScreen
                 }}
                 style={{
                   marginHorizontal: -dimensions.width * 0.04,
-                  width: dimensions.width * 0.91,
-                  paddingTop: dimensions.width * 0.01,
-                  borderRadius: dimensions.width * 0.043,
-                  backgroundColor: 'rgba(253, 185, 56, 0.7)',
-                  alignSelf: 'center',
                   paddingBottom: dimensions.height * 0.019,
+                  alignSelf: 'center',
+                  borderRadius: dimensions.width * 0.043,
+                  paddingTop: dimensions.width * 0.01,
+                  backgroundColor: 'rgba(253, 185, 56, 0.7)',
+                  width: dimensions.width * 0.91,
                   borderWidth: 0,
                 }}
               />
