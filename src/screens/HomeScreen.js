@@ -146,16 +146,7 @@ const HomeScreen = () => {
                 There are no habits here yet, it's time to create one!
               </Text>
 
-              <Image
-                source={require('../assets/images/homePersImage.png')}
-                style={{
-                  marginTop: dimensions.height * 0.05,
-                  height: dimensions.height * 0.4,
-                  alignSelf: 'flex-start',
-                  width: dimensions.width * 0.4,
-                }}
-                resizeMode='contain'
-              />
+              
             </View>
           </View>
 
